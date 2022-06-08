@@ -1,0 +1,249 @@
+
+/*_____FONTS________________________________________________________________*/
+
+@font-face {
+    font-family: 'advent pro';
+    src: url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.eot');
+    src: url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.woff2') format('woff2'),
+         url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.woff') format('woff'),
+         url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.ttf') format('truetype'),
+         url('fonts/adventpro_regular_macroman/adventpro-regular-webfont.svg#advent_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+@font-face {
+    font-family: 'advent pro light';
+    src: url('fonts/adventpro_light_macroman/adventpro-light-webfont.eot');
+    src: url('fonts/adventpro_light_macroman/adventpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/adventpro_light_macroman/adventpro-light-webfont.woff2') format('woff2'),
+         url('fonts/adventpro_light_macroman/adventpro-light-webfont.woff') format('woff'),
+         url('fonts/adventpro_light_macroman/adventpro-light-webfont.ttf') format('truetype'),
+         url('fonts/adventpro_light_macroman/adventpro-light-webfont.svg#advent_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+@font-face {
+    font-family: 'advent pro extralight';
+    src: url('fonts/adventpro_extralight_macroman/adventpro-extralight-webfont.eot');
+    src: url('fonts/adventpro_extralight_macroman/adventpro-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/adventpro_extralight_macroman/adventpro-extralight-webfont.woff2') format('woff2'),
+         url('fonts/adventpro_extralight_macroman/adventpro-extralight-webfont.woff') format('woff'),
+         url('fonts/adventpro_extralight_macroman/adventpro-extralight-webfont.ttf') format('truetype'),
+         url('fonts/adventpro_extralight_macroman/adventpro-extralight-webfont.svg#advent_proextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+/*_____BLOC_PAGE_____________________________________________________________*/
+
+header
+{
+background-image: url(images/femme_enceinte_lisant2.jpg);
+}
+
+
+
+#menu /*HEADER*/
+	{
+	background-color: rgba(210,155,137,0.7);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+		}
+
+
+.logo/* Détails Logo*/
+	{
+	flex: 1;
+	}
+			.logo img
+				{
+				display: block;
+				height: 80px;
+				margin: auto;
+				}  
+
+.navigation/* Détails Navigation*/
+	{
+	flex: 5;
+	}
+		.navigation ul
+		{
+		display: flex;
+		justify-content: space-between;		
+		}
+			.navigation li
+			{
+			display: inline;				
+			margin-right: 40px;
+			}								
+				.navigation a
+				{
+				color: white;
+				font-size: 20px;
+				font-family: 'advent pro regular', arial;
+				text-decoration: none;
+				}
+					.navigation a:hover
+					{
+					color:  white;
+					border-top: 1px solid white;
+					border-bottom: 1px solid white;
+					}					
+
+.connexion/* Détails Connexion*/
+	{
+	flex: 2;
+	}
+			.connexion ul
+			{
+			display: flex;
+			justify-content: flex-end;
+			}
+					.connexion li
+					{
+					display: inline;
+					margin-right: 15px;
+					}
+							.connexion a
+							{
+							color: white;
+							font-family: advent pro regular;
+							text-decoration: none;
+							}
+									.connexion a:hover
+									{
+									color: white;
+									font-family: advent pro regular;
+									font-weight : bold;
+									}
+
+
+#titre /*TITRE "Porter un enfant..."*/
+	{
+	display: block;
+	height: 700px;
+	position: relative;
+	}
+			#titre p
+			{
+			position: absolute;
+	 		bottom: 0px;
+			font-family: 'advent pro extralight', arial, sans-serif;
+			color: white;
+			font-size: 25px;
+			text-align:end;
+
+			}
+					#titre p strong
+					{
+					font-family: advent pro, arial, sans-serif;
+					color: white;
+					text-align: end;
+					}
+
+#banniere img
+{
+width: 100%;
+}
+
+#corps
+{
+display: flex;
+margin: 0px 0px 0px 0px;
+}
+
+	section
+		{
+		flex: 3;
+		background-color: rgba(210,155,137,1);
+		text-align: center;
+		padding:  25px;
+		font-family: advent pro light, arial, sans-serif;
+		color: white;
+
+		}
+			section a
+			{
+			color: white;
+			}
+				section a:hover
+				{
+				font-weight : bold
+				}
+
+
+
+			section img
+				{
+			  	width: 100%;
+
+				}
+
+
+
+			aside
+			{
+				flex: 2;
+				background-color: rgba(232,192,179,1);
+				text-align: center;
+				padding:  25px;
+				font-family: advent pro light, arial, sans-serif;
+				color: white;
+				}
+
+
+
+footer
+	{
+	background-color: rgba(232,192,179,1);
+	display:  flex;
+	flex-direction: column;
+	flex-wrap: no-wrap;
+	
+
+	}
+
+	footer ul
+		{
+		display: flex;
+		justify-content: space-evenly;	
+		margin: 15px 0px 0px 0px;
+		}
+
+		footer li
+		{
+		font-family: advent pro light, arial, sans-serif;
+		list-style-type: none;
+		font-size: 20px;
+		}
+			footer a
+			{
+			text-decoration: none;
+			color: white;
+			}
+				footer a:hover
+			{
+			font-weight: bold;
+			}
+
+	footer p
+		{
+		margin: 15px 0px 10px 0px;
+		color: white;
+		text-align: center;
+		font-family: advent pro regular, arial, sans-serif;
+		font-size: 13px;
+				}
+
+img
+{
+max-height: 100%;
+}
+
+
+
+
+
+
+
+
+
